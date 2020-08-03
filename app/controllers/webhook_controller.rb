@@ -26,7 +26,6 @@ class WebhookController < ApplicationController
     def create_issue
         @issue = Issue.new
         @issue.id = @issue_number
-        @issue.number = @issue_number
         if @issue.save
             puts "Saved successfully issue on database!"
         end    
