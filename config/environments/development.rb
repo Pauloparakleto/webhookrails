@@ -6,7 +6,9 @@ Rails.application.configure do
   # since you don't have to restart the web server when you make code changes.
 
   #Allow requests to 0e8be65b67ad.ngrok.io
-  config.hosts = "dd5a7be7d4de.ngrok.io"
+  config.hosts = "800202466400.ngrok.io"
+
+  config.debug_exception_response_format = :api
 
   config.cache_classes = false
 
