@@ -8,6 +8,9 @@ Rails.application.configure do
   #Allow requests to 0e8be65b67ad.ngrok.io
   config.hosts = "800202466400.ngrok.io"
 
+  #And allow local host
+  config.hosts = "localhost"
+
   config.debug_exception_response_format = :api
 
   config.cache_classes = false
