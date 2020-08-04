@@ -14,8 +14,5 @@ class EventsController < ApplicationController
     def handle_record_not_found
         render json: "{status: 404, response: Content not found}"
     end
-    #def issue_events
-        #@issue = Issue.find(params[:issue_id])
-        #@events = Event.all
-    #end
+    
 end
