@@ -5,11 +5,8 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
 
-  #Allow requests to e.g. 0e8be65b67ad.ngrok.io
-  config.hosts = "db0d4aaf9b5e.ngrok.io"
-
-  #And allow local host
-  config.hosts = "localhost"
+  # Allow both localhost and ngrok.io tunel:
+  config.hosts = ["localhost", "e39d686d4cab.ngrok.io"]
 
   config.debug_exception_response_format = :api
 
