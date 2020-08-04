@@ -13,6 +13,6 @@ class IssuesController < ApplicationController
     end
 
     def handle_record_not_found
-        render json: "{status: 404, response: Content not found, id: #{params[:id]}}"
+        render json: "{status: 404, response: Content not found}"
     end
 end
