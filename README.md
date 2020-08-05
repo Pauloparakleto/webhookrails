@@ -48,7 +48,7 @@ Rails need to know the hosts it will be listenning in on.
 
 1. Go to your `config/enviroment/development.rb`. Change the `config.hosts = "localhost"` to `config.hosts = ["localhost", "3xampl3g1v3n.ngrok.io"]`. This is so because Rails need both hosts, the localhost to local get requests to the database. And the encrypted host to receive post request from github. Note "3xampl3g1v3n.ngrok.io" it is jus an *example given". You must past the encrypted host provided by ngrok on your terminal.
 
-ngrok will provide always a new encrypted host for every time you run `./ngrok http port-number`
+Ngrok will provide always a new encrypted host for every time you run `./ngrok http port-number`. So you need to update your webhook on github and provide another "3xampl3g1v3n.ngrok.io" to `config.hosts = ["localhost", "another3xampl3g1v3n.ngrok.io"]`
 
 2. Database settings for postgresql: on `database.yml`, you must have something like this:
 
